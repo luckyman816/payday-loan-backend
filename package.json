@@ -1,0 +1,54 @@
+{
+  "name": "bakcend",
+  "version": "1.0.0",
+  "description": "backend",
+  "main": "server.ts",
+  "scripts": {
+    "test": "test",
+    "lint": "eslint --fix",
+    "dev": "npx foreman run nodemon server.ts",
+    "build": "eslint --fix & tsc",
+    "start": "node --env-file=.env build/server.js"
+  },
+  "keywords": [
+    "backend",
+    "hapi"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.2",
+    "@hapi/yar": "^11.0.1",
+    "axios": "^1.6.7",
+    "bcryptjs": "^2.4.3",
+    "ethereumjs-util": "^7.1.5",
+    "foreman": "^3.0.1",
+    "hapi-auth-jwt2": "^10.4.0",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "node-cron": "^3.0.2",
+    "nodemailer": "^6.9.6",
+    "otp-generator": "^4.0.1",
+    "pg": "^8.11.3",
+    "phone": "^3.1.41",
+    "sequelize": "^6.33.0",
+    "socket.io": "^4.7.4",
+    "socketio-jwt": "^4.6.2",
+    "web3": "^4.2.0"
+  },
+  "devDependencies": {
+    "@hapi/eslint-plugin": "^6.0.0",
+    "@types/bcrypt": "^5.0.1",
+    "@types/hapi__yar": "^10.1.5",
+    "@types/jsonwebtoken": "^9.0.4",
+    "@types/node-cron": "^3.0.10",
+    "@types/nodemailer": "^6.4.13",
+    "@types/otp-generator": "^4.0.1",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
+    "eslint": "^8.51.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
